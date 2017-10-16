@@ -1,4 +1,4 @@
-/**
+package com.example.android.justjava; /**
 
  * IMPORTANT: Add your package below. Package name can be found in the project's AndroidManifest.xml file.
 
@@ -27,6 +27,8 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 
 import com.example.android.justjava.R;
+
+import static android.R.attr.id;
 
 
 /**
@@ -62,11 +64,25 @@ public class MainActivity extends AppCompatActivity {
         displayPrice(quantity*5);
 
     }
+
+    /**
+
+     * This method displays the given text on the screen.
+
+     */
+
+    private void displayMessage(String message) {
+        int price = quantity*5;
+        String priceMessage = "Total: $" + price;
+        priceMessage = priceMessage + "Thank You!";
+         displayMessage(priceMessage);
+    }
     /**
 
      * This method is called when the plus button is clicked.
 
      */
+
 
     public void increment(View view) {
 
