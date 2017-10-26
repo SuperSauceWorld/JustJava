@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +16,31 @@
     android:orientation="vertical"
     tools:context="com.example.android.justjava.MainActivity">
 
+
     <TextView
+        android:layout_width="wrap_content"
+        android:text="Toppings"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/whipped_cream_checkbox"
+        android:text="Whipped cream"
+        android:layout_width="wrap_content"
+        android:paddingLeft="24dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/chocolate_checkbox"
+            android:text="Chocolate"
+            android:layout_width="wrap_content"
+            android:paddingLeft="24dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+
+
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quantity"
@@ -34,7 +63,6 @@
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:text="2"
-        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -47,18 +75,17 @@
 
 
     <TextView
-        android:text="Price"
+        android:text="Order Summary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAllCaps="true"
         android:layout_marginTop="16dp"  />
 
     <TextView
-        android:id="@+id/price_text_view"
+        android:id="@+id/order_summary_text_view"
         android:text="$10"
         android:layout_marginTop="16dp"
         android:textSize="16sp"
-        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -68,10 +95,6 @@
         android:layout_height="wrap_content"
         android:text="Order" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Jevon's Kickball team lost against the Broke Bois"
-        android:layout_height="wrap_content" />
-
 
 </LinearLayout>
+    </ScrollView>
